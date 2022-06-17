@@ -13,7 +13,7 @@ if len(argv) > 2 or len(argv) == 1:
     print("Usage: nqueens N")
     sys.exit(1)
 
-N = argv[1]
+N = int(argv[1])
 
 if not isinstance(N, int):
     print("N must be a number")
