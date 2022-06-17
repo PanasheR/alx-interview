@@ -5,23 +5,24 @@ N non-attacking queens on an N×N chessboard.
 Write a program that solves the N queens problem.
 """
 
-from sys import argv, exit
+import sys
+from sys import argv
 
 global N
 
 if len(argv) > 2 or len(argv) == 1:
     print("Usage: nqueens N")
-    exit(1)
+    sys.exit(1)
 
 N = int(argv[1])
 
 if not isinstance(N, int):
     print("N must be a number")
-    exit(1)
+    sys.exit(1)
 
 if N < 4:
     print("N must be at least 4")
-    exit(1)
+    sys.exit(1)
 
 
 def queens(n, i, a, b, c):
