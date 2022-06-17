@@ -1,11 +1,11 @@
 #!/usr/bin/node
-const ind = process.argv[2];
-const url = 'https://swapi-api.hbtn.io/api/films/' + ind;
-const requested = require('request');
+const indent = process.argv[2];
+const request = require('request');
+const URL = 'https://swapi-api.hbtn.io/api/films/' + indent;
 
-function retrived (charUrl) {
+function retrived (urlChar) {
   return new Promise(function (resolve, reject) {
-    requested(charUrl, function getChar (err2, response2, body2) {
+    request(urlChar, function getChar (err2, response2, body2) {
       if (err2) {
         reject(err2);
       } else {
@@ -22,7 +22,7 @@ async function getlist (urlist) {
   }
 }
 
-requested(url, function getList (err, response, body) {
+request(URL, function getList (err, response, body) {
   if (err) {
     throw err;
   } else {
