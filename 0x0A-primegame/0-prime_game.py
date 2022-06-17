@@ -2,19 +2,19 @@
 """ Maria and Ben are playing a game """
 
 
-def remove_numbers(n, nums):
-    """ remove numbers """
-    for j in range(len(nums)):
-        if nums[j] % n == 0:
-            nums[j] = 0
-
-
 def isPrime(n):
     """ n: checking prime num"""
     for j in range(2, n):
         if n % j == 0:
             return False
     return True
+
+
+def remove_numbers(n, nums):
+    """ remove numbers """
+    for j in range(len(nums)):
+        if nums[j] % n == 0:
+            nums[j] = 0
 
 
 def isWinner(x, nums):
