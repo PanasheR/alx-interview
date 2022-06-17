@@ -2,7 +2,6 @@
 """
 The N queens puzzle is the challenge of placing
 N non-attacking queens on an N×N chessboard.
-Write a program that solves the N queens problem.
 """
 
 import sys
@@ -14,7 +13,7 @@ if len(argv) > 2 or len(argv) == 1:
     print("Usage: nqueens N")
     sys.exit(1)
 
-N = int(argv[1])
+N = argv[1]
 
 if not isinstance(N, int):
     print("N must be a number")
