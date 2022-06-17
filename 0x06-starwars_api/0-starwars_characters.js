@@ -1,7 +1,7 @@
 #!/usr/bin/node
-const indent = process.argv[2];
+const ident = process.argv[2];
 const request = require('request');
-const URL = 'https://swapi-api.hbtn.io/api/films/' + indent;
+const URL = 'https://swapi-api.hbtn.io/api/films/' + ident;
 
 function retrived (urlChar) {
   return new Promise(function (resolve, reject) {
